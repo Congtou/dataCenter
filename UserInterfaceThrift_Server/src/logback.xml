@@ -1,0 +1,29 @@
+<configuration>   
+  <appender name="CONSOLE"   
+    class="ch.qos.logback.core.ConsoleAppender">   
+    <!-- 过滤掉 TRACE 和 DEBUG 级别的日志-->   
+    <filter class="ch.qos.logback.classic.filter.ThresholdFilter">   
+      <level>trace</level>   
+    </filter>   
+    <encoder>   
+      <pattern>   
+        %-4relative [%thread] %-5level %logger{30} - %msg%n   
+      </pattern>   
+    </encoder>   
+  </appender>   
+   
+  <appender name="file" class="ch.qos.logback.core.FileAppender">
+ 	<file>/var/log/lilu/server.log</file>
+  	<encoder charset="UTF-8">
+  	  <pattern>%n[%level] - %date - %logger%line%n %msg%n</pattern>
+  	</encoder>
+  </appender>
+  
+  <logger name="com.serverProxy" level="INFO">
+    <appender-ref ref="file" />
+  </logger>
+  
+  <root level="trace">   
+    <appender-ref ref="CONSOLE" />   
+  </root>   
+</configuration>  

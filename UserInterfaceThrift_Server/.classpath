@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.6"/>
+	<classpathentry kind="lib" path="libs/libthrift-0.9.1.jar"/>
+	<classpathentry kind="lib" path="libs/mysql-connector-java-5.1.23-bin.jar"/>
+	<classpathentry kind="lib" path="libs/logback-access-1.1.1.jar"/>
+	<classpathentry kind="lib" path="libs/logback-classic-1.1.1.jar"/>
+	<classpathentry kind="lib" path="libs/logback-core-1.1.1.jar"/>
+	<classpathentry kind="lib" path="libs/slf4j-api-1.7.6.jar"/>
+	<classpathentry kind="lib" path="libs/json/commons-beanutils.jar"/>
+	<classpathentry kind="lib" path="libs/json/commons-collections-3.2.jar"/>
+	<classpathentry kind="lib" path="libs/json/commons-httpclient.jar"/>
+	<classpathentry kind="lib" path="libs/json/commons-lang-2.4.jar"/>
+	<classpathentry kind="lib" path="libs/json/commons-logging.jar"/>
+	<classpathentry kind="lib" path="libs/json/ezmorph-1.0.6.jar"/>
+	<classpathentry kind="lib" path="libs/json/json-lib-2.2.3-jdk15.jar"/>
+	<classpathentry kind="lib" path="libs/json/morph-1.1.1.jar"/>
+	<classpathentry kind="lib" path="libs/json/xom1.1.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jst.ws.cxf.core.CXF_CLASSPATH_CONTAINER/Apache CXF/2.7.7">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="libs/json/fastjson-1.1.6.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
